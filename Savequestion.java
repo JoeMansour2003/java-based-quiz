@@ -9,22 +9,32 @@ public class Savequestion extends Savequestion2
 		int i=0;
 		String q="";
 		char ch;
+		int maxInput=4;
 		FileWriter f1= new FileWriter("./Answer.txt",true);// file object for answer file(change the file location where you want to save the file)
 		BufferedWriter bf1=new BufferedWriter(f1);
 		FileWriter f2= new FileWriter("./CO.txt",true);//file object for question file (change the file location where you want to save the file)
 		BufferedWriter bf2=new BufferedWriter(f2);
 		Scanner sc=new Scanner(System.in);
 
+		int value;
 		System.out.println("Enter the question");
-		Savequestion2.doStuff("",sc.nextLine());
+		Savequestion2.doStuff("",sc.nextLine(),maxInput);
+
 		System.out.println("Enter option (a)");
-		Savequestion2.doStuff("(a) ",sc.nextLine());
+		value = Savequestion2.doStuff("(a) ",sc.nextLine(),maxInput);
+		System.out.println("You have "+value+" more options\n");
+
 		System.out.println("Enter option (b)");
-		Savequestion2.doStuff("(b) ",sc.nextLine());
+		value = Savequestion2.doStuff("(b) ",sc.nextLine(),maxInput);
+		System.out.println("You have "+value+" more options\n");
+
 		System.out.println("Enter option (c)");
-		Savequestion2.doStuff("(c) ",sc.nextLine());
+		value = Savequestion2.doStuff("(c) ",sc.nextLine(),maxInput);
+		System.out.println("You have "+value+" more options\n");
+
 		System.out.println("Enter option (d)");
-		Savequestion2.doStuff("(d) ",sc.nextLine());
+		value = Savequestion2.doStuff("(d) ",sc.nextLine(),maxInput);
+		System.out.println("You have "+value+" more options\n");
 
 		
 		System.out.println("Enter CO of the question(1,2,3,4)");

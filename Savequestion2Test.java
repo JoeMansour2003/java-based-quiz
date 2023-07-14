@@ -7,7 +7,7 @@ import org.junit.Test;
 public class Savequestion2Test {
     @Test
     public void Savequestion2Test() throws Exception {
-       boolean value = Savequestion2.doStuff("What is the weather like today?","");
+       int value = Savequestion2.doStuff("What is the weather like today?","",4);
         Assert.assertEquals(true,value);
     }
 }

@@ -1,4 +1,4 @@
-//save question 
+package mutationTest;//save question
 import java.io.*;
 import java.util.Scanner;
 public class Savequestion extends Savequestion2
@@ -10,9 +10,9 @@ public class Savequestion extends Savequestion2
 		String q="";
 		char ch;
 		int maxInput=4;
-		FileWriter f1= new FileWriter("./Answer.txt",true);// file object for answer file(change the file location where you want to save the file)
+		FileWriter f1= new FileWriter("../Answer.txt",true);// file object for answer file(change the file location where you want to save the file)
 		BufferedWriter bf1=new BufferedWriter(f1);
-		FileWriter f2= new FileWriter("./CO.txt",true);//file object for question file (change the file location where you want to save the file)
+		FileWriter f2= new FileWriter("../CO.txt",true);//file object for question file (change the file location where you want to save the file)
 		BufferedWriter bf2=new BufferedWriter(f2);
 		Scanner sc=new Scanner(System.in);
 
